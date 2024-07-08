@@ -1,0 +1,233 @@
+* {
+  padding: 0;
+  margin: 0;
+  width: auto;
+  font-family: "Mulish", sans-serif;
+  font-family: "Manrope", sans-serif;
+  box-sizing: content-box;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+}
+
+.eclipse1Calculate {
+  height: 500px;
+  width: 500px;
+  background-color: rgba(152, 244, 222, 0.45);
+  position: absolute;
+  top: -6rem;
+  left: -4rem;
+  z-index: -2;
+  border-radius: 100%;
+  border: 1px solid #98f4de;
+}
+
+.heading1 {
+  margin-top: 10px;
+  padding: 20px;
+  text-align: center;
+}
+
+.Service1 {
+  height: auto;
+  margin: 60px auto;
+  background-color: rgba(152, 244, 222, 0.6);
+  border-radius: 30px;
+  border: 1px solid #98f4de;
+  padding: 20px;
+  max-width: 90%;
+}
+
+.eclipse2Calculate {
+  height: 500px;
+  width: 500px;
+  background-color: rgba(152, 244, 222, 0.45);
+  position: absolute;
+  top: 470px;
+  right: 1rem;
+  z-index: -2;
+  border-radius: 100%;
+  border: 1px solid #98f4de;
+}
+
+.title, .title2 {
+  font-size: 24px;
+  font-weight: bold;
+  margin-bottom: 20px;
+  padding-left: 30px;
+}
+
+.title2 {
+  margin-top: 50px;
+}
+
+.input-group {
+  display: flex;
+  align-items: center;
+  margin-bottom: 10px;
+  padding: 0 40px;
+  flex-wrap: wrap;
+}
+
+.input-box,
+.result-box,
+.constant {
+  padding: 5px;
+  margin: 0 5px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 1em;
+  width: 100%;
+  max-width: 190px;
+}
+
+.constant {
+  max-width: 55px;
+}
+
+.result-box {
+  max-width: 370px;
+}
+
+.result-box2 {
+  padding: 5px;
+  margin: 0 5px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 1em;
+  width: 100%;
+  max-width: 170px;
+}
+
+.operator {
+  font-size: 1.5em;
+  margin: 0 5px;
+}
+
+/* Responsive Styles */
+@media screen and (max-width: 1024px) {
+  .input-group {
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+
+  .Service1 {
+    max-width: 95%;
+    padding: 15px;
+  }
+
+  .title, .title2 {
+    font-size: 22px;
+    padding-left: 20px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .Service1 {
+    height: auto;
+    margin: 40px 20px;
+    padding: 15px;
+  }
+
+  .input-group {
+    padding: 0 15px;
+  }
+
+  .title, .title2 {
+    font-size: 20px;
+    padding-left: 15px;
+  }
+}
+
+@media screen and (max-width: 425px) {
+  .eclipse1Calculate, .eclipse2Calculate {
+    display: none; /* Hide eclipses on very small screens */
+  }
+
+  .Service1 {
+    height: auto;
+    margin: 20px 10px;
+    padding: 10px;
+  }
+
+  .input-group {
+    padding: 0 10px;
+  }
+
+  .title, .title2 {
+    font-size: 18px;
+    padding-left: 10px;
+  }
+}
+
+@media screen and (max-width: 375px) {
+  .Service1 {
+    height: auto;
+    margin: 10px 5px;
+    padding: 5px;
+  }
+
+  .input-group {
+    padding: 0 5px;
+  }
+
+  .title, .title2 {
+    font-size: 16px;
+    padding-left: 5px;
+  }
+
+  .input-box,
+  .result-box,
+  .constant {
+    max-width: 100%;
+  }
+
+  .constant {
+    max-width: 50px;
+  }
+
+  .result-box {
+    max-width: 100%;
+  }
+
+  .result-box2 {
+    max-width: 100%;
+  }
+}
+
+@media screen and (max-width: 320px) {
+  .Service1 {
+    height: auto;
+    margin: 10px 5px;
+    padding: 5px;
+  }
+
+  .input-group {
+    padding: 0 2px;
+  }
+
+  .title, .title2 {
+    font-size: 14px;
+    padding-left: 2px;
+  }
+
+  .input-box,
+  .result-box,
+  .constant {
+    max-width: 100%;
+  }
+
+  .constant {
+    max-width: 50px;
+  }
+
+  .result-box {
+    max-width: 100%;
+  }
+
+  .result-box2 {
+    max-width: 100%;
+  }
+}

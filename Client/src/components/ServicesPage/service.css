@@ -1,0 +1,119 @@
+/* Base Styles */
+* {
+  padding: 0;
+  margin: 0;
+  font-family: "Mulish", sans-serif, "Manrope", sans-serif;
+  box-sizing: border-box;
+  overflow-x: hidden;
+}
+
+/* Eclipse Styles */
+.eclipse1st, .eclipse23 {
+  height: 50vw;
+  width: 50vw;
+  background-color: rgba(152, 244, 222, 0.45);
+  position: absolute;
+  z-index: -2;
+  border-radius: 100%;
+}
+
+.eclipse1st {
+  top: -10vw;
+  left: -10vw;
+  border: 1px solid #98f4de;
+}
+
+.eclipse23 {
+  top: 100%;
+  right: -10vw;
+}
+
+/* Heading and Paragraph Styles */
+.heading1 {
+  margin-top: 1vw;
+  padding: 2vw;
+  text-align: center;
+}
+
+.heading2 {
+  padding-top: 1vw;
+  font-size: 2vw;
+  line-height: 1.5;
+  text-align: start;
+}
+
+.para2 {
+  padding: 1vw 4vw 0 2vw;
+  line-height: 1.5;
+  font-size: 1vw;
+}
+
+/* Service Container */
+.Service2 {
+  display: block;
+  margin: 6vw auto;
+  padding: 2vw;
+  width: 80%;
+  max-width: 1200px;
+  background-color: rgba(152, 244, 222, 0.6);
+  border-radius: 2vw;
+  border: 1px solid #98f4de;
+}
+
+/* Responsive Styles */
+@media screen and (max-width: 768px) {
+  .eclipse1st, .eclipse23 {
+    height: 70vw;
+    width: 70vw;
+  }
+
+  .eclipse23 {
+    top: 150%;
+  }
+
+  .Service2 {
+    width: 90%;
+  }
+
+  .heading1 {
+    font-size: 4vw;
+  }
+
+  .heading2 {
+    font-size: 3vw;
+    padding-left: 2vw;
+  }
+
+  .para2 {
+    font-size: 2.5vw;
+    padding: 1vw 2vw;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .eclipse1st, .eclipse23 {
+    height: 90vw;
+    width: 90vw;
+  }
+
+  .eclipse23 {
+    top: 200%;
+  }
+
+  .Service2 {
+    width: 95%;
+  }
+
+  .heading1 {
+    font-size: 5vw;
+  }
+
+  .heading2 {
+    font-size: 4vw;
+  }
+
+  .para2 {
+    font-size: 3vw;
+    padding: 2vw;
+  }
+}

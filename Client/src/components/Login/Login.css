@@ -1,0 +1,324 @@
+/* Base Styles */
+* {
+  font-family: "Mulish", sans-serif, "Manrope", sans-serif;
+  box-sizing: border-box;
+}
+
+/* Main Login Div */
+.loginMainDiv {
+  width: 80%;
+  margin: 70px auto 270px auto;
+  position: relative;
+}
+
+/* Login Image */
+#loginImage {
+  position: absolute;
+  height: 70vw;
+  width: 80vw;
+  max-width: 1200px;
+  max-height: 800px;
+  border-radius: 15px; /* Rounded corners */
+}
+
+/* Form Container */
+.formMain {
+  margin-top: -1rem;
+  margin-left: 5vw;
+}
+
+/* Login Form */
+.loginForm {
+  overflow: hidden;
+  position: relative;
+  background-color: rgba(207, 197, 167, 0.75);
+  border: 1px solid rgba(255, 193, 7, 1);
+  border-radius: 20px;
+  width: 60%;
+  max-width: 600px;
+  margin: 80px auto;
+  padding: 40px;
+}
+
+/* Headings */
+h2 {
+  text-align: center;
+  font-size: 2.5rem;
+}
+
+/* Paragraph */
+.paraForm {
+  text-align: center;
+  color: white;
+  margin: 1rem auto;
+}
+
+/* Links */
+.formPara a {
+  text-decoration: none;
+  color: rgb(113, 249, 181);
+  font-weight: 600;
+}
+
+/* Form Labels */
+.formLabel {
+  display: block;
+  margin-left: 5%;
+  font-size: 1rem;
+}
+
+/* Form Inputs */
+.formInput {
+  width: 90%;
+  height: 40px;
+  border: 1px solid white;
+  border-radius: 20px; /* Rounded corners */
+  margin: 5px 5% 15px 5%;
+  background-color: #fff;
+}
+
+.formInput::placeholder {
+  font-size: 1rem;
+  padding-left: 8px;
+}
+
+/* Forgot Password */
+.passwordForgot {
+  color: black;
+  margin: 19px 0 0 5%;
+  font-size: 0.9rem;
+}
+
+/* Form Submit Button */
+.formSubmit {
+  margin: 20px 5%;
+  width: 90%;
+  height: 47px;
+  border-radius: 25px; /* Rounded corners */
+  border: none;
+  color: white;
+  font-size: 1.2rem;
+  background-image: linear-gradient(to bottom, rgba(29, 166, 132, 1), rgba(190, 220, 124, 0.99));
+}
+
+/* Horizontal Line */
+.hrLine {
+  display: flex;
+  align-items: baseline;
+  justify-content: center;
+  gap: 5px;
+  margin: 0 5%;
+}
+
+.straightLine {
+  border-bottom: 2px solid black;
+  width: 40%;
+  border-radius: 5px; /* Rounded corners */
+}
+
+/* Icons */
+.icons {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+ margin-left: 0px;
+  overflow-y: hidden;
+  border-radius: 15px; /* Rounded corners */
+ 
+}
+
+/* Responsive Styles */
+@media screen and (max-width: 768px) {
+  .loginForm {
+    width: 80%;
+  }
+
+  h2 {
+    font-size: 2rem;
+  }
+
+  .formLabel, .passwordForgot {
+    font-size: 0.9rem;
+  }
+
+  .formInput {
+    height: 35px;
+  }
+
+  .formInput::placeholder {
+    font-size: 0.9rem;
+  }
+
+  .formSubmit {
+    font-size: 1rem;
+    height: 40px;
+  }
+  
+  #loginImage {
+    height: 100vw;
+    width: 80vw;
+    max-width: 1200px;
+    max-height: 800px;
+    border-radius: 15px; /* Rounded corners */
+  }
+}
+
+@media screen and (max-width: 425px) {
+  .loginMainDiv {
+    width: 90%;
+    margin-top: 50px;
+    margin-bottom: 150px;
+  }
+
+  #loginImage {
+    height: 150vw;
+    width: 90vw;
+    border-radius: 15px; /* Rounded corners */
+  }
+
+  .formMain {
+    margin-left: 2vw;
+  }
+
+  .loginForm {
+    width: 90%;
+    padding: 20px;
+  }
+
+  h2 {
+    font-size: 1.8rem;
+  }
+
+  .formLabel, .passwordForgot {
+    font-size: 0.8rem;
+  }
+
+  .formInput {
+    height: 30px;
+  }
+
+  .formInput::placeholder {
+    font-size: 0.75rem;
+  }
+
+  .formSubmit {
+    font-size: 0.9rem;
+    height: 35px;
+  }
+
+  .paraForm {
+    font-size: 0.9rem;
+  }
+
+  .formPara a {
+    font-size: 0.9rem;
+  }
+}
+
+@media screen and (max-width: 375px) {
+  .loginMainDiv {
+    width: 90%;
+    margin-top: 50px;
+    margin-bottom: 150px;
+  }
+
+  #loginImage {
+    height: 160vw;
+    width: 95vw;
+    border-radius: 15px; /* Rounded corners */
+  }
+
+  .formMain {
+    margin-left: 2vw;
+  }
+
+  .loginForm {
+    width: 90%;
+    height :90%;
+    padding: 5px;
+  }
+
+  h2 {
+    font-size: 1.6rem;
+  }
+
+  .formLabel, .passwordForgot {
+    font-size: 0.8rem;
+  }
+
+  .formInput {
+    height: 30px;
+  }
+
+  .formInput::placeholder {
+    font-size: 0.75rem;
+  }
+
+  .formSubmit {
+    font-size: 0.9rem;
+    height: 35px;
+  }
+
+  .paraForm {
+    font-size: 0.9rem;
+  }
+
+  .formPara a {
+    font-size: 0.9rem;
+  }
+}
+
+@media screen and (max-width: 320px) {
+  .loginMainDiv {
+    width: 95%;
+    margin-top: 30px;
+    margin-bottom: 100px;
+  }
+
+  #loginImage {
+    height: 170vw;
+    width: 95vw;
+    border-radius: 15px; /* Rounded corners */
+  }
+
+  .formMain {
+    margin-left: 1vw;
+  }
+
+  .loginForm {
+    width: 95%;
+    padding: 10px;
+  }
+
+  h2 {
+    font-size: 1.5rem;
+  }
+
+  .formLabel, .passwordForgot {
+    font-size: 0.7rem;
+  }
+
+  .formInput {
+    height: 25px;
+    font-size: 0.8rem;
+    margin: 0%;
+  }
+
+  .formInput::placeholder {
+    font-size: 0.7rem;
+    padding-left: 10px;
+  }
+
+  .formSubmit {
+    font-size: 0.8rem;
+    height: 30px;
+  }
+
+  .paraForm {
+    font-size: 0.8rem;
+  }
+
+  .formPara a {
+    font-size: 0.8rem;
+  }
+}

@@ -1,0 +1,663 @@
+.heroContent{
+  width: 100vw;
+  background-color: #F5F7FA;
+  display: flex;
+  justify-content: space-between;
+  margin: auto;
+  margin-left: 100px;
+  margin-right: 100px;
+}
+
+.heroSection{
+  background-color: #F5F7FA;
+  display: flex;
+  justify-content:space-around;
+
+}
+
+.heroLeft{
+  max-width:60vw;
+  
+  justify-content: center;
+}
+
+
+.heroHeading{
+  color: rgb(50, 50, 50);
+  font-weight: 600;
+  font-family: "Manrope", sans-serif;
+  font-size: 45px;
+  width:100vw;
+
+}
+
+.paraHero{
+  font-weight: 500;
+  margin-top: 10px;
+  color: #717171;
+  margin-left: 3em;
+  font-size: 20px;
+
+}
+
+.buttonHero{
+  margin-top: 20px;
+  margin-left: 60px;
+  align-items: flex-start;
+  background-color: #4CAF4F;
+  color: white;
+  width: 100px;
+  height: 45px;
+  border: none;
+  background-position: 0 90%;
+  box-shadow: rgba(0, 0, 0, .2) 15px 28px 25px -18px;
+  padding: 6px 25px 10px 10px;
+  font-size: 20px;
+  border-radius: 6px;
+  transform: scale(1);
+  transition: all 0.75s ease-in;
+}
+
+.buttonHero:hover{
+  cursor: pointer;
+  transform: translate(0, 2px, 0);
+  color: #4CAF4F;
+  background-color: white;
+  box-shadow: rgba(179, 244, 172, 0.5) 0 1px 30px;
+}
+
+.clientSection{
+  display: flex;
+  flex-direction: column;
+  gap: 2.6rem;
+  margin: auto;
+  margin-bottom: 0.7rem;
+  margin-top: 0.7rem;
+  height: 20rem;
+}
+
+.clientHeading{
+  text-align: center;
+  font-size: 40px;
+  line-height: 44px;
+  margin-top: 20px;
+  font-weight: 600;
+}
+
+.clientPara{
+  overflow: hidden;
+  font-size: 25px;
+  line-height: 27px;
+  text-align: center;
+
+}
+
+.client-image-div{
+  width: 90%;
+  display: flex;
+  justify-content: space-around;
+  margin: auto;
+  overflow: hidden;
+  margin-top: 30px;
+}
+
+.client-image-div img{
+  transform: scale(0.9);
+  height: 2em;
+  transition: all 0.5s ease-in;
+}
+
+.client-image-div img:hover{
+  transform: scale(1);
+  overflow: hidden;
+}
+
+/* COMMUNITY SECTION */
+
+.communitySection{
+  display: flex;
+  flex-direction: column;
+  margin: auto;
+  margin-top: 20px;
+  width: 70%;
+}
+
+.communityHeading{
+  margin: 20px;
+  padding: 20px;
+  text-align: center;
+  font-size: 35px;
+}
+
+.communityPara{
+  text-align: center;
+  font-size: 28px;
+  margin-top: -15px;
+}
+
+
+.cards{
+  margin: 40px;
+  display: flex;
+  justify-content: space-between;
+  gap: 50px;
+  height: 20em;
+  width: 100%;
+  margin: auto;
+  margin-top: 4em;
+
+}
+
+
+.communityCards{
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  padding: 20px;
+  height: 250px;
+  margin: auto;
+  margin-top: 1.4rem;
+  width: 320px;
+  transform: scale(0.9);
+  transition: all 0.5s ease-in;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.communityCards:hover{
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  background-color: white;
+  transform: scale(1);
+}
+
+.cardHeading{
+  font-size: 20px;
+  display: block;
+}
+
+.cardImage{
+  width: 55px;
+  height: 46px;
+}
+
+/* ACHIEVEMENTS SECTION */
+.achievements{
+  background-color: rgba(245, 247, 250, 1);
+  
+}
+
+.achievementContent{
+  width: 80%;
+  display: flex;
+  justify-content: space-between;
+  margin: auto;
+  gap:15px;
+}
+
+.leftSide{
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  margin: 25px;
+  text-align: center;
+}
+
+.achievementHeading{
+  font-size: 30px;
+  line-height: 40px;
+  font-weight: 600;
+}
+
+.greenText{
+  color: #4CAF4F;
+}
+
+.achievementPara{
+  font-size: 16.5px;
+  font-weight: 500;
+  margin-bottom: -15px;
+}
+
+.rightSideAchieve{
+  display: flex;
+  gap: 5px;
+  width:fit-content;
+  
+}
+
+.achievementCount{
+  display: flex;
+  margin: 20px;
+  padding: 5px;
+  transform: scale(1);
+  transition: all 0.5s ease-in;
+  gap:5px;
+  flex-wrap: wrap;
+}
+
+.achievementCount:hover{
+  transform: scale(1.1);
+}
+
+
+.left{
+  margin-right: 15px;
+}
+
+.number{
+  margin: 5px;
+  font-size: 20px;
+  font-weight: 600;
+}
+
+.text{
+  margin: 1px;
+}
+/* MARKETING SECTION */
+
+.marketingSection{
+  width: 80%;
+  margin: auto;
+}
+
+
+.marketingText{
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  margin: auto;
+  margin-top: 30px;
+  width: 60%;
+  text-align: center;
+}
+
+.marketingHeading{
+  font-size: 35px;
+}
+
+.marketingPara{
+  font-size: 20px;
+}
+
+
+.marketingGrid{
+  display: flex;
+  width: 100%;
+  justify-content: space-evenly;
+  gap: 50px;
+  margin: 100px auto 100px auto;
+  flex-wrap: wrap;
+
+}
+
+
+.marketingGrid img{
+  overflow: hidden;
+  transform: scale(0.95);
+  transition: all 0.5s ease-in;
+
+}
+.marketingGrid img:hover{
+  overflow: hidden;
+  transform: scale(1);
+}
+
+/* FOOTER */
+.footer{
+  background-color: rgba(245, 247, 250, 1);
+  text-align: center;
+  margin-top: -40px;
+}
+
+.footerContent{
+  display: flex;
+  gap: 32px;
+  flex-direction: column;
+  /* margin-top: 40px; */
+  padding: auto;
+}
+.headingFooter{
+  margin: auto;
+  margin-top: 100px;
+  font-size: 64px;
+  text-align: center;
+  line-height: 76px;
+}
+
+.buttonDiv{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  margin: auto;
+  margin-bottom: 30px;
+}
+.footerButton{
+  margin: auto;
+  border-radius: 10px;
+  width: 182px;
+  height: 52px;
+  color: white;
+  font-size: 18px;
+  border: none;
+  background-color: #4CAF4F;
+  transform: scale(1);
+  transition: all 0.75s ease-in;
+  padding: 6px 21px 10px 15px;
+
+}
+
+
+.footerButton:hover{
+  cursor: pointer;
+  transform: translate(0, 2px, 0);
+  color: #4CAF4F;
+  background-color: white;
+  box-shadow: rgba(179, 244, 172, 0.5) 0 1px 30px;
+
+}
+.greenArrow{
+  transform: scale(2.2);
+  position: relative;
+  right: 10px;
+  opacity: 0;
+}
+
+.footerButton:hover .greenArrow{
+  opacity: 1;
+}
+
+.footerArrow{
+  width: 22px;
+  height: 22px;
+  position: relative;
+  top: 4.9px;
+  left: 7px;
+  color: black;
+}
+@media(max-width:900px){
+  .navbar{
+    flex-wrap:wrap;
+  }
+.heroLeft{
+  flex-wrap: wrap;
+}
+      .achievementContent{
+        width: 80%;
+        display: flex;
+        justify-content: space-evenly;
+        margin: auto;
+      
+      }
+      .marketingGrid{
+    
+        flex-wrap: wrap;
+        padding:25px;
+      
+      }
+     .heroImage{ 
+      width:100%;
+     }
+
+   
+    .leftSide{
+      display: block;
+      flex-direction: column;
+      gap: 5px;
+      margin: 7px;
+    font-size: 14px;
+      justify-content:space-around;
+    }
+    html{
+      font-size:1.2rem;
+    }
+    .achievementCount{
+    flex-wrap: wrap;
+    }
+
+  }
+ 
+
+@media(max-width:768px){
+
+
+  .achievementContent{
+    width: 100%;
+    display: flex;
+    justify-content:space-evenly;
+    margin: auto;
+    gap: 20px;
+  }
+  .achievementCount{
+  flex-wrap:nowrap;
+  }
+  .heroHeading{
+    font-size: 30px;
+ 
+  }
+  .navbar{
+    justify-content: space-evenly;
+  
+  }
+  .heroContent{
+    flex-direction: column-reverse;
+  }
+  .heroImage{
+    width:60%;
+    align-self: center;
+  }
+ .heroLeft{
+  justify-content:start;
+  width:100%;
+
+  }
+  .navbar {
+    display: flex;
+    justify-content:space-around;
+    flex-direction: row;
+    background-color: #E4EBF2;
+    flex-wrap: wrap;
+  }
+  .cards{
+    margin: 20px;
+    display: flex;
+    justify-content: space-between;
+    gap: 50px;
+    height: 20em;
+    width: 100%;
+    margin: auto;
+    margin-top: 4em;
+  }
+ 
+  .communityCards{
+    display: flex;
+
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+  gap: 5px;
+  padding: 5px;
+  height: 250px;
+
+  margin-top:1.5rem;;
+  width: 320px;
+  transform: scale(0.9);
+  transition: all 0.5s ease-in;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+
+.achievementCount{
+  display: flex;
+  margin: 10px;
+  padding: 3px;
+  transform: scale(1);
+  transition: all 0.5s ease-in;
+  gap:5px;
+  flex-wrap: wrap;
+}
+.marketingPara{
+  font-size: 20px;
+  margin-top:30px;
+}
+.headingFooter{
+  font-size: 35px;
+}
+ }
+
+@media  screen and (max-width: 425px)
+{
+
+.heroHeading{
+  font-size: 18px;
+width: 100%;
+  justify-content:start;
+ margin:0%;
+  padding-right: 0%;
+  word-break: normal;
+  margin-left: 4px;
+}
+.paraHero{
+  justify-content: strat;
+  margin: 0%;
+  padding: 0%;
+  margin-top: 5px;
+}
+.buttonHero{
+  justify-content: center;
+  margin:0%;
+  padding:0%;
+  margin-top: 5px;
+}
+
+.cards{
+  margin: 0px;
+  display: flex;
+  justify-content:space-evenly;
+  gap: 6px;
+  height:auto;
+  width: 100%;
+  margin:0%;
+  margin-top: 2em;
+  margin-bottom: 4px;
+}
+
+.cardHeading{
+  display:inline-block;
+
+margin: 0%;
+padding: 0%;
+  font-size: 11px;
+  
+ 
+  
+}
+.cardImage{
+  width: 45px;
+  height: 50px;
+}
+.communityCards{
+  margin-left:0px;
+  padding: 0%;
+  width:100%;
+}
+
+.achievementHeading{
+  font-size: 1rem;
+  margin: 0%;
+  padding: 0%;
+}
+.achievementCount{
+  font-size:11px;
+  margin: 0%;
+  padding: 0%;
+  display: flex;
+
+  
+  gap:0%;
+  flex-wrap: wrap;
+
+}
+.achievementContent{
+  padding: 0%;
+  margin-top: 20px;
+}
+.number{
+  font-size:10px;
+}
+.clientHeading{
+  font-size:25px;
+}
+.communityHeading{
+  font-size: 20px;
+}
+.communityPara
+{
+font-size: 25px;
+}
+.marketingText{
+  font-size: 30px;
+}
+.marketingHeading{
+  font-size:32.5px;
+}
+.footerContent{
+  display: flex;
+  gap: 25px;
+  flex-direction: column;
+  /* margin-top: 40px; */
+  padding: auto;
+}
+.headingFooter{
+  font-size:30px;
+}
+.marketingGrid{
+  display: flex;
+width: 100%;
+justify-content: space-evenly;
+gap: 50px;
+margin: 30px auto 80px auto;
+flex-wrap: wrap;
+padding: 0%;
+}
+.div2Heading{
+line-height:1rem;
+padding: 6px;
+}
+.div3Heading{
+  line-height:1rem;
+  padding: 6px;
+  }
+
+}
+@media  screen and (max-width: 375){
+  
+ 
+.achievementContent{
+  width: 100%;
+  display: flex;
+  justify-content:space-evenly;
+  margin: auto;
+  gap: 10px;
+  margin: 0%;
+}
+
+.leftSide{
+ 
+  margin: 5px;
+
+}
+.achievementPara{
+ font-size: 12px;
+}
+.right{
+  margin: 0%;
+}
+.text{
+  font-size: 5px;
+}
+}
+
+
+  

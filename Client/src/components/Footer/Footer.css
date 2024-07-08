@@ -1,0 +1,114 @@
+.footer2 {
+    background-color: rgba(38, 50, 56, 1);
+    padding: 3% 5%; /* Padding adjusted */
+    color: white;
+    display: flex;
+    flex-wrap: wrap; /* Ensure items wrap on smaller screens */
+    justify-content: space-evenly;
+}
+
+.footer2Content {
+    flex: 1 1 100%; /* Take full width on smaller screens, adjust flex-grow and flex-shrink as needed */
+    display: flex;
+    flex-direction: row;
+    gap: 2%; /* Adjusted gap */
+    align-items: center; /* Center items */
+    justify-content: space-around;
+}
+.footerItem{
+    display: block;
+
+}
+.div1, .div2, .div3 {
+
+    display:flexbox;
+    flex-direction: column;
+    gap: 2%; /* Adjusted gap */
+    align-items: center; /* Center items */
+}
+
+.icons {
+    display:inline-block;
+
+    gap: 3%; /* Adjusted gap */
+}
+
+.icons img {
+    transform: scale(1);
+    transition: all 0.5s ease-in;
+    border-radius: 100%;
+}
+
+.icons img:hover {
+    transform: scale(1.2);
+    box-shadow: rgb(253, 253, 253) 0 0.3px 10px;
+}
+
+.div2Heading, .div3Heading {
+    text-align: center;
+    margin: 2% 0; /* Adjusted margin */
+}
+
+.companyList p, .supportList p {
+    margin: 1% 0; /* Adjusted margin */
+}
+
+.inputDiv {
+    position: relative;
+    display: inline-block;
+}
+
+.footerInput {
+    width: 100%; /* Full width */
+    margin-top: 5%; /* Adjusted margin */
+    height: 40px; /* Set a fixed height for input */
+    background-color: rgba(38, 50, 56, 1);
+    border-radius: 8px;
+    border: 1px solid white;
+    padding: 10px; /* Adjusted padding */
+    transition: 0.5s ease-in;
+    box-sizing: border-box; /* Ensure padding and border are included in width */
+}
+
+.footerInput:hover {
+    box-shadow: rgb(253, 253, 253) 0 0.3px 15px;
+    cursor: pointer;
+}
+
+.footerInput::placeholder {
+    color: white;
+    opacity: 0.8;
+    font-weight: lighter;
+}
+
+.sendIcon {
+    width: 20px; /* Adjusted size */
+    height: 20px; /* Adjusted size */
+    position: absolute;
+    cursor: pointer;
+    right: 10px; /* Adjusted position */
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+/* Media Query for smaller screens */
+@media (max-width: 768px) {
+    .footer2Content, .div1, .div2, .div3 {
+        text-align: center; /* Center align on smaller screens */
+        gap: 5%; /* Adjusted gap */
+        flex-direction: column;
+    }
+
+    .footerInput {
+        width: 100%; /* Full width */
+    }
+    
+}
+@media screen and (max-width:320)
+{
+   .div1{
+    display: flex;
+    justify-content: center;
+   }
+}
+    

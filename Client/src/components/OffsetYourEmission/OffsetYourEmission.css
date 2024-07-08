@@ -1,0 +1,207 @@
+/* Base Styles */
+html, body {
+  height: auto;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.eclipse1stOffset {
+  height: 500px;
+  width: 500px;
+  background-color: rgba(152, 244, 222, 0.45);
+  position: absolute;
+  top: -7rem;
+  left: -7rem;
+  z-index: -2;
+  border-radius: 100%;
+  border: 1px solid #98F4DE;
+}
+
+.eclipse2ndOffset {
+  height: 500px;
+  width: 500px;
+  background-color: rgba(152, 244, 222, 0.45);
+  position: absolute;
+  top: 60rem;
+  right: 1rem;
+  z-index: -2;
+  border-radius: 100%;
+  border: 1px solid #98F4DE;
+}
+
+/* Main div */
+.offsetBigDiv {
+  background-color: rgba(152, 244, 222, 0.45);
+  width: 70%;
+  margin: 10% auto;
+  padding-top: 40px;
+  border-radius: 20px;
+  margin-bottom: 100px;
+}
+
+.choices {
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  border-radius: 30px;
+  width: 90%;
+  max-width: 700px;
+  height: 50px;
+  background-color: white;
+  font-size: 1.3rem;
+  color: rgba(2, 106, 0, 1);
+  font-weight: 600;
+  margin: auto;
+  margin-bottom: 40px;
+}
+
+.choices div {
+  width: 45%;
+  height: 80%;
+  padding-top: 7px;
+  border-radius: 30px;
+}
+
+.imageDiv {
+  display: grid;
+  grid-template-rows: repeat(2, 1fr);
+  margin: auto;
+  width: 90%;
+  padding-left: 5%;
+  padding-right: 5%;
+}
+
+.imageDiv img {
+  width: 100%;
+  height: auto;
+}
+
+.row1, .row2 {
+  display: flex;
+  justify-content: center;
+}
+
+.row1 {
+  margin-bottom: 20px;
+}
+
+/* Responsive Styles */
+@media screen and (max-width: 768px) {
+  .choices {
+    flex-direction: column;
+    height: auto;
+    font-size: 1rem;
+  }
+
+  .eclipse2ndOffset {
+    top: 50rem;
+    right: 1rem;
+  }
+
+  .offsetBigDiv {
+    width: 80%;
+    margin: 10% auto;
+    padding-top: 40px;
+    border-radius: 20px;
+  }
+
+  .choices div {
+    width: 80%;
+    margin: 10px 0;
+  }
+
+  .imageDiv {
+    padding-left: 2%;
+    padding-right: 2%;
+  }
+}
+
+@media screen and (max-width: 425px) {
+  .offsetBigDiv {
+    width: 90%;
+    margin-top: 50px;
+    margin-bottom: 50px;
+    padding-top: 20px;
+  }
+  .eclipse2ndOffset {
+    top: 40rem;
+    right: 1rem;
+  }
+
+  .choices {
+    width: 100%;
+    font-size: 0.9rem;
+  }
+
+  .choices div {
+    width: 90%;
+  }
+
+  .imageDiv {
+    padding-left: 0;
+    padding-right: 0;
+  }
+}
+
+@media screen and (max-width: 375px) {
+  .choices {
+    font-size: 0.8rem;
+  }
+
+  .choices div {
+    width: 100%;
+  }
+
+  .imageDiv {
+    grid-template-rows: repeat(2, auto);
+  }
+  .eclipse2ndOffset {
+    top: 40rem;
+    right: 1rem;
+  }
+
+}
+
+@media screen and (max-width: 320px) {
+  .eclipse1stOffset {
+    height: 300px;
+    width: 300px;
+    top: -3rem;
+    left: -2rem;
+  }
+
+  .eclipse2ndOffset {
+    height: 300px;
+    width: 300px;
+    top: 40rem;
+    right: 3rem;
+  }
+
+  .offsetBigDiv {
+    width: 100%;
+    margin-top: 30px;
+    margin-bottom: 30px;
+    padding-top: 20px;
+  }
+
+  .choices {
+    font-size: 0.7rem;
+    flex-direction: column;
+  }
+
+  .choices div {
+    width: 90%;
+    margin: 5px 0;
+  }
+
+  .imageDiv {
+    padding-left: 0;
+    padding-right: 0;
+  }
+
+  .imageDiv img {
+    width: 100%;
+  }
+}

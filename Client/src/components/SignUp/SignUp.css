@@ -1,0 +1,366 @@
+.signUpMainDiv {
+  width: 80%;
+  margin: 70px auto 270px auto;
+}
+
+.signUpImage {
+  position: absolute;
+  height: 50vw;
+  width: 80vw;
+  max-width: 1200px;
+  max-height: 800px;
+  border-radius: 15px;
+}
+
+.formMain {
+  margin-top: -1rem;
+  margin-left: 5vw;
+}
+
+.signupForm {
+  overflow: hidden;
+  position: relative;
+  background-color: rgba(207, 197, 167, 0.75);
+  border: 1px solid rgba(255, 193, 7, 1);
+  border-radius: 20px;
+  width: 60%;
+  max-width: 600px;
+  margin: 80px auto;
+  padding: 40px;
+}
+
+.formHeading {
+  text-align: center;
+  font-size: 2.5rem;
+}
+
+.formPara {
+  text-align: center;
+  color: white;
+  margin: 1rem auto;
+}
+
+.formPara a {
+  text-decoration: none;
+  color: rgb(113, 249, 181);
+  font-weight: 600;
+}
+
+.formlabel {
+  display: block;
+  margin: 5%;
+  font-size: 1rem;
+}
+
+.formInput {
+  width: 90%;
+  height: 40px;
+  border: 1px solid white;
+  border-radius: 20px;
+  margin: 5px 5% 5px 5%;
+}
+
+.formInput::placeholder {
+  font-size: 1rem;
+  padding-left: 8px;
+}
+
+.signUpAs {
+  margin-left: 90px;
+}
+
+.customRadio {
+  width: 15px;
+  height: 15px;
+  border: 2px solid white;
+  border-radius: 3px;
+  margin-right: 1px;
+  cursor: pointer;
+  position: absolute;
+  top: 3px;
+  left: 0;
+}
+
+.squareButton input[type="radio"], .squareButton input[type="checkbox"] {
+  display: none;
+}
+
+.squareButton input[type="radio"]:checked + .customRadio::after,
+.squareButton input[type="checkbox"]:checked + .customRadio::after {
+  content: '';
+  width: 9px;
+  height: 9px;
+  background-color: white;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  border-radius: 1px;
+}
+
+.squareButton {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  cursor: pointer;
+  padding: 5px 10px;
+}
+
+.labelText {
+  width: 100px;
+  background-color: white;
+  border: 1px solid white;
+  text-align: center;
+  border-radius: 10px;
+  transition: all 0.5s ease-in;
+}
+
+.labelText:hover {
+  cursor: pointer;
+  background-color: unset;
+}
+
+.TandC {
+  display: flex;
+  margin-left: 80px;
+  gap: 10px;
+  align-items: baseline;
+}
+
+.TandC input {
+  border: 2px solid white;
+  width: 15px;
+  height: 15px;
+  margin-right: 10px;
+}
+
+.submitForm {
+  display: block;
+  margin: 20px 5%;
+  width: 90%;
+  height: 47px;
+  border-radius: 25px; /* Rounded corners */
+  border: none;
+  color: white;
+  font-size: 1.2rem;
+  background-image: linear-gradient(to bottom, rgba(29, 166, 132, 1), rgba(190, 220, 124, 0.99));
+}
+
+.hrLine {
+  display: flex;
+  align-items: baseline;
+  margin-left: 80px;
+  gap: 5px;
+}
+
+.straightLine {
+  border-bottom: 2px solid black;
+  width: 40%;
+}
+
+.iconsDiv {
+  overflow-y: hidden;
+  border-radius: 0.3rem;
+  margin-left: 200px;
+  margin-top: 10px;
+}
+
+
+
+@media (max-width: 768px) {
+  .signUpMainDiv {
+    width: 90%;
+    margin-top: 40px;
+    margin-bottom: 150px;
+  }
+
+  .signUpImage {
+    height: 70vw;
+    width: 90vw;
+  }
+
+  .formMain {
+    margin-left: 2vw;
+  }
+
+  .signupForm {
+    width: 90%;
+    padding: 20px;
+  }
+
+  .formHeading {
+    font-size: 1.8rem;
+  }
+
+  .formPara {
+    margin: 0.7rem auto;
+  }
+
+  .formlabel {
+    font-size: 0.8rem;
+    margin: 3%;
+  }
+
+  .formInput {
+    height: 30px;
+    font-size: 0.8rem;
+  }
+
+  .signUpAs {
+    margin-left: 40px;
+  }
+
+  .TandC {
+    margin-left: 40px;
+  }
+
+  .submitForm {
+    font-size: 1rem;
+    height: 40px;
+  }
+
+  .hrLine {
+    margin-left: 40px;
+  }
+
+  .iconsDiv {
+    margin-left: 80px;
+  }
+}
+
+@media (max-width: 480px) {
+  .signUpMainDiv {
+    width: 95%;
+    margin-top: 30px;
+    margin-bottom: 100px;
+  }
+
+  .signUpImage {
+    height: 80vw;
+    width: 95vw;
+  }
+
+  .formMain {
+    margin-left: 1vw;
+  }
+
+  .signupForm {
+    width: 95%;
+    padding: 15px;
+  }
+
+  .formHeading {
+    font-size: 1.5rem;
+  }
+
+  .formPara {
+    margin: 0.6rem auto;
+  }
+
+  .formlabel {
+    font-size: 0.7rem;
+    margin: 2%;
+  }
+
+  .formInput {
+    height: 25px;
+    font-size: 0.7rem;
+  }
+
+  .signUpAs {
+    margin-left: 20px;
+  }
+
+  .TandC {
+    margin-left: 20px;
+  }
+
+  .submitForm {
+    font-size: 0.9rem;
+    height: 35px;
+  }
+
+  .hrLine {
+    margin-left: 20px;
+  }
+
+  .iconsDiv {
+    margin-left: 50px;
+  }
+}
+
+@media (max-width: 320px) {
+  .signUpMainDiv {
+    width: 100%;
+    margin-top: 20px;
+    margin-bottom: 80px;
+  }
+
+  .signUpImage {
+    height: 90vw;
+    width: 100vw;
+  }
+
+  .formMain {
+    margin-left: 0.5vw;
+  }
+
+  .signupForm {
+    width: 100%;
+    padding: 10px;
+  }
+
+  .formHeading {
+    font-size: 1.2rem;
+  }
+
+  .formPara {
+    margin: 0.5rem auto;
+  }
+
+  .formlabel {
+    font-size: 0.6rem;
+    margin: 1%;
+  }
+
+  .formInput {
+    height: 20px;
+    font-size: 0.6rem;
+  }
+
+  .signUpAs {
+    margin-left: 10px;
+  }
+
+  .TandC {
+    margin-left: 9px;
+  }
+
+  .submitForm {
+    font-size: 0.8rem;
+    height: 30px;
+  } 
+
+  .hrLine {
+    margin-left: 10px;
+  }
+
+  .iconsDiv {
+    margin-left: 20px;
+  }
+  .customRadio {
+    width: 15px;
+    height: 15px;
+    border: 2px solid white;
+    border-radius: 3px;
+    margin-right: 0%;
+    margin-left: 0%;
+    padding-left: 0%;
+    cursor: pointer;
+ position:absolute;
+    top: 3px;
+  
+  }
+}
