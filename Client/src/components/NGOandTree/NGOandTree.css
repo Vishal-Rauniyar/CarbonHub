@@ -58,14 +58,14 @@ html, body {
     width: 60px;
     border-radius: 0 16px;
     background-color: #4CAF4F;
-    left: 70px;
+    left: 95px;
     top: -1.6em;
   }
   
   .bottomPart {
     display:block;
     background-color: rgba(203, 252, 223, 1);
-    width: 200px;
+    width: 220px;
     height: 190px;
     padding: 1em;
     display: flex;
@@ -167,7 +167,7 @@ html, body {
   @media screen and (max-width: 1024px) {
     .treeMainDiv{
       
-      width: 90%;
+      width: 80%;
         margin:auto;
         border-radius: 2rem;
         padding: 3rem 9rem 3rem ;
@@ -177,19 +177,49 @@ html, body {
         box-shadow: 10px 15px 4px 0 rgba(0, 0, 0, 0.25);
         gap: 30px;
     }
+    .smallRectangle {
+      position: relative;
+      height: 70px;
+      width: 90px;
+      border-radius: 0 16px;
+      background-color: #4CAF4F;
+      left: 95px;
+      top: -1.6em;
+    }
+    .bottomPart {
+   
+      background-color: rgba(203, 252, 223, 1);
+      width: 170px;
+      height: 190px;
+      padding: 1em;
+    display: flex;
+    justify-content: center;
+      gap: 0.9rem;
+      margin-bottom: -1.7em;
+      flex-direction: column;
+    }
     .mainRectangle {
-        display: flexbox;
-        flex-direction: column;
-      position:relative;
+   
         padding:9%;
         padding-bottom: 15%;
         width: 170px;
         height: 270px;
         border-radius: 1em;
-        border: 1px solid rgba(0, 142, 204, 1);
+      
       margin: 0%;
      
-        background-color: rgba(231, 255, 246, 1);
+     
+      }
+      .eclipse2ndTree {
+        height: 500px;
+        width: 500px;
+        background-color: rgba(152, 244, 222, 0.45);
+        position: absolute;
+        top: 87rem;
+        right: 1rem;
+        z-index: -2;
+        border-radius: 100%;
+        border: 1px solid #98F4DE;
       }
   }
   
@@ -211,17 +241,25 @@ html, body {
         flex-direction: column;
       
       }
-      .smallRectangle {
+      .mainRectangle {
+   
+        padding:9%;
+        padding-bottom: 15%;
+        width: 250px;
+        height: 270px;
+        border-radius: 1em;
+      
+      margin: 0%;
      
+      }
+      .smallRectangle {
+       top:-1.7em;
         left: 50%;
 
        
       }
       
-    .mainRectangle {
-      width: 95%;
-      margin: 0.5rem 0;
-    }
+  
   
     .cardsDiv {
       flex-direction: column;
@@ -242,22 +280,23 @@ html, body {
   
     .treeMainDiv {
       padding: 1rem;
-      width: 100%;
+      width: 90%;
     }
   
     .mainRectangle {
       width: 90%;
       margin: 0.5rem auto;
+      margin-bottom: -1.3em;
     }
     .bottomPart {
         display: flex;
         background-color: rgba(203, 252, 223, 1);
-        width:130%  ;
+        width:120%  ;
         height: 190px;
        padding: 0%;
       
         gap: 0.25rem;
-        margin-bottom: -1.4em;
+        margin-bottom: -1.3em;
         flex-direction: column;
       
       }
@@ -281,6 +320,10 @@ html, body {
 
   @media screen and (max-width:375px)
   {
+    .mainRectangle {
+      width: 65%;
+      margin: 0.5rem auto;
+    }
     .treeMainDiv {
         grid-template-columns:1fr ;
         padding: 1rem;
@@ -289,69 +332,15 @@ html, body {
       .bottomPart {
         display: flex;
         background-color: rgba(203, 252, 223, 1);
-        width: 300px;
+        width: 255px;
         height: 190px;
-       padding: 4%;
+       padding: 9%;
         display: flex;
         gap: 0.4rem;
-        margin-bottom: -2.4em;
+        margin-bottom: -2.39em;
         flex-direction: column;
       
       }
   }  
-  
-  
-  @media screen and (max-width: 320px) {
-    .treeMainDiv {
-      padding: 0.5rem;
-      width: 100%;
-    }
-  
-    .mainRectangle {
-      width: 100%;
-      margin: 0.5rem 0;
-    }
-  
-    .cardsDiv {
-      width: 100%;
-      flex-direction: column;
-    }
-  
-    .card1 {
-      width: 100%;
-      margin: 10px 0;
-      height: auto;
-    }
-    .bottomPart {
-        display: flex;
-        background-color: rgba(203, 252, 223, 1);
-        width: 300px;
-        height: 190px;
-       padding: 3%;
-        gap: 0.4rem;
-        margin-bottom: -2.2em;
-        flex-direction: column;
-      
-      }
-    .cardImage1 {
-      width: 100%;
-      height: auto;
-      transform: none;
-    }
-  
-    .textDiv {
-      margin: 10px;
-    }
-  
-    .readMoreDiv {
-      flex-direction: column;
-      align-items: flex-start;
-      gap: 10px;
-    }
-  
-    .readMoreButton {
-      width: 80px;
-      height: 40px;
-    }
-  }
+
   

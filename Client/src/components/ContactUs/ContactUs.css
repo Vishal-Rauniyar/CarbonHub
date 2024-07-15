@@ -1,3 +1,11 @@
+/* Base Styles */
+html, body {
+    height: auto;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+  
 .eclipse1 {
     height: 500px;
     width: 500px;
@@ -8,18 +16,18 @@
     z-index: -2;
     border-radius: 100%; 
     border: 1px solid #98F4DE;
-  }
-
+}
+  
 /* Form div */
-
 .mainFormDiv {
+    display: block;
     background-color: rgba(152, 244, 222, 0.45);
     width: 80%;
     margin: 100px auto 170px auto;
     box-shadow: 10px 15px 4px 0 rgba(0, 0, 0, 0.25);
     border-radius: 30px;
 }
-
+  
 .formDivChild {
     background-color: rgba(255, 255, 255, 0.7);
     width: 90%;
@@ -30,178 +38,162 @@
     color: rgba(29, 33, 48, 1);
     padding: 20px 40px;
 }
-
+  
 .leftRight {
-    margin: 50px auto 50px auto;
-    margin-top: 50px;
+    margin: 50px auto;
     display: flex;
-    overflow: hidden;
+    flex-wrap: wrap;
     gap: 2rem;
     justify-content: space-between;
 }
-
+  
 .leftSideContact {
-    display: flex;
+    display: blockc;
     flex-direction: column;
-    /* align-items: start; */
     gap: 2%;
-    height: 10rem;
+    height: auto;
 }
-
+  
 .hrLineAndContact {
     display: flex;
+    flex-wrap: wrap;
     gap: 2.7%;
     margin-top: 4rem;
     margin-bottom: 2rem;
     align-items: baseline;
 }
-
+  
 .horizontalLine {
     width: 15%;
     border-bottom: 2.4px solid rgba(29, 33, 48, 1);
 }
-
+  
 h1 {
     font-size: 2.7rem;
     font-weight: lighter;
     margin-left: 4rem;
     text-align: left;
 }
-
+  
 .contactNGO {
     font-size: 16px;
 }
-
+  
 .rightSide {
     width: 320px;
     display: flex;
     gap: 4%;
-    height: 10rem;
+    height: auto;
     flex-direction: column;
 }
-
+  
 .rightHead {
     font-size: 20px;
     font-weight: lighter;
 }
-
+  
 .rightDiv1 {
-    width: 100%;
+    width: 85%;
     display: flex;
-    gap: 3.6%;
+    gap: 0%;
 }
-
+  
 .rightDiv1 p {
     font-size: 14px;
 }
-
+  
 .web {
     text-decoration: none;
     color: rgba(29, 33, 48, 1);
 }
-
+  
 .contactPara {
     margin-top: 2%;
     text-align: left;
     overflow: hidden;
     margin-left: 4rem;
 }
-
+  
 .horizontalLine2 {
     width: 75%;
     border-bottom: 2.4px solid rgba(229, 229, 229, 1);
     margin: 4.8% 0;
 }
-
+  
 .headOffice {
     font-weight: lighter;
     font-size: 20px;
 }
-
+  
 form {
     margin: 70px;
     margin-bottom: 20px;
-    margin-left: -3rem;
     padding: 30px;
 }
-
-.formDiv{
+  
+.formDiv {
     display: flex;
     gap: 10px;
     flex-direction: column;
 }
-
-.c1, .c2{
+  
+.c1, .c2 {
     display: flex;
     flex-direction: column;
     margin: 0 0 25px 0;
 }
-
+  
 .formRow1, .row3 {
     display: flex;
+    flex-wrap: wrap;
     justify-content: space-around;
 }
-
-
+  
 .row2, .row4 {
-    display: flex;
-    justify-content: space-around;   
+    display: grid;
+    flex-wrap: wrap;
+    justify-content: space-around;
 }
-
-form input{
+  
+form input {
     background-color: transparent;
-    width: 50%;
+    width: 90%;
+    max-width: 400px;
     border: unset;
     border-bottom: 2px solid black;
     border-radius: 0;
 }
-
-form label{
-    margin-left: -3rem;
+  
+form label {
+    margin: 0.5rem 0;
     font-size: 0.8rem;
 }
-
-.emailLabel{
-    margin-right: 11.6rem;
+  
+.emailLabel, .firstNameLabel, .lastNameLabel, .subjectLabel {
     font-size: 1rem;
 }
-
-.firstNameLabel{
-    font-size: 1rem;
-    margin-left: -11.7rem;
-}
-
-.lastNameLabel{
-    font-size: 1rem;
-    margin-left: -10rem;
-}
-
-.subjectLabel{
-    margin-right: 10.9rem;
-    font-size: 1rem;
-}
-
-.textAreaDiv{
+  
+.textAreaDiv {
     display: flex;
     flex-direction: column;
-    margin-left: 87px;
+    margin: 1rem 0;
     gap: 10px;
 }
-
-#formBox{
-    width: 100%;
+  
+#formBox {
+    width: 90%;
     height: 200px;
     background-color: transparent;
     border: 2px solid black;
     border-radius: 7px;
-    padding: 20px 0 0 20px;
+    padding: 20px;
 }
-
-#formBox::placeholder{
+  
+#formBox::placeholder {
     color: rgba(29, 33, 48, 0.5);
 }
-
-form button{
+  
+form button {
     width: 180px;
     height: 50px;
     border-radius: 5px;
@@ -209,21 +201,18 @@ form button{
     color: white;
     border: unset;
     text-align: center;
-    margin: 30px 0 0 450px;
+    margin: 30px auto;
     font-size: 1rem;
-    transform: translate(1);
     transition: all 0.8s ease-in-out;
 }
-
-form button:hover{
+  
+form button:hover {
     color: #4CAF4F;
     cursor: pointer;
     background-color: white;
     box-shadow: rgba(179, 244, 172, 0.5) 0 1px 30px;
-    transform: translate(0, 2px, 0);
 }
-
-
+  
 /* Eclipse 2 */
 .eclipse2 {
     height: 500px;
@@ -231,9 +220,196 @@ form button:hover{
     background-color: rgba(152, 244, 222, 0.45);
     position: absolute;
     top: 70rem;
-    right: -4rem;
+    right: 1rem;
     border: 1px solid #98F4DE;
     z-index: -2;
     border-radius: 100%; 
+}
+  
+/* Responsive Styles */
+@media screen and (max-width: 1024px) {
+    .mainFormDiv {
+        width: 90%;
+        margin: 50px auto;
+    }
+    
+    .formDivChild {
+        width: 95%;
+        padding: 20px;
+    }
 
-  }
+    .rightDiv1 {
+        width: 85%;
+        display: flex;
+        gap: 5%;
+        margin-left: 35%;
+    }
+    
+    .leftRight {
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    .rightSide, .leftSideContact {
+        width: 100%;
+        align-items: center;
+    }
+    
+    form {
+        margin: 30px;
+    }
+    
+ 
+    
+  
+}
+  
+@media screen and (max-width: 768px) {
+    .mainFormDiv {
+        width: 95%;
+    }
+    .hrLineAndContact {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 2.7%;
+        margin-top: 4rem;
+        margin-bottom: 2rem;
+        align-items: baseline;
+    }
+    .formDivChild {
+        width: 100%;
+    }
+    
+    h1 {
+        font-size: 1.5rem;
+        margin-left: 1rem;
+    }
+    
+    .leftRight {
+        gap: 1rem;
+    }
+    
+    form {
+        margin: 20px;
+    }
+    
+   
+    
+    .eclipse1, .eclipse2 {
+        display: none; /* Hide eclipses on small screens */
+    }
+}
+  
+@media screen and (max-width: 425px) {
+    .mainFormDiv {
+        width: 100%;
+        margin: 30px 0;
+    }
+
+    .formDivChild {
+        width: 90%;
+        margin: 20px 0;
+    }
+    
+    h1 {
+        font-size: 1.2rem;
+        margin-left: 0.5rem;
+    }
+    
+    form {
+        margin: 10px;
+        padding: 10px;
+    }
+    
+    form button {
+        width: 150px;
+        height: 40px;
+    }
+    .contactPara {
+        margin-top: 2%;
+        text-align:left;
+        overflow: hidden;
+        margin-left: 2.5rem;
+        font-size: 17px;
+    }
+    .rightDiv1 {
+      
+        margin-left: 3%;
+    }
+    #formBox {
+        width: 90%;
+    
+        padding: 15px;
+    }
+}
+  
+@media screen and (max-width: 375px) {
+    .mainFormDiv {
+        width: 100%;
+    }
+    
+    .formDivChild {
+        width: 100%;
+        margin: 10px 0;
+    }
+    
+    h1 {
+        font-size: 1rem;
+        margin-left: 0.5rem;
+    }
+    
+    form {
+        margin: 5px;
+        padding: 5px;
+    }
+    
+    form button {
+        width: 130px;
+        height: 35px;
+    }
+    #formBox {
+        width: 80%;
+    
+        padding: 15px;
+    }
+    .contactPara {
+       
+        margin-left: 1.6rem;
+       
+    }
+}
+  
+@media screen and (max-width: 320px) {
+    .mainFormDiv {
+        width: 100%;
+    }
+    
+    .formDivChild {
+        width: 100%;
+    }
+    
+    h1 {
+        font-size: 0.8rem;
+        margin-left: 0.5rem;
+    }
+    
+    form {
+        margin: 5px;
+        padding: 5px;
+    }
+    
+    form button {
+        width: 130px;
+        height: 35px;
+    }
+    .contactPara {
+       
+        margin-left: 1rem;
+      
+    }
+    .rightDiv1 {
+      
+        margin-left: 3%;
+        font-size: 14px;
+    }
+}
