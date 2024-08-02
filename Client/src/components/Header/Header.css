@@ -13,25 +13,27 @@ html, body {
   max-height: 70px; /* Adjust as needed */
   padding: 7px; /* Adjust padding as needed */
   width: 100%;
+  
 }
 
 .logo {
   font-weight: 700;
   font-family: "Montagu Slab";
-  font-size: 24px; /* Adjust as needed */
-  margin-top: 20px; /* Adjust margin as needed */
-  margin-left: 15px;
+  font-size: 35px; /* Adjust as needed */
+  margin-top:0; /* Adjust margin as needed */
+  margin-left: 10px;
 }
 
 .navbar-options a {
-  display: inline-block;
-  padding: 15px 20px; /* Adjust padding as needed */
+  display: inline-flex;
+  padding: 20px 30px; /* Adjust padding as needed */
   font-family: "Inter";
   font-size: 16px; /* Adjust font size as needed */
   color: black;
   text-decoration: none;
   transition: background-color 0.3s ease;
   font-weight: bold;
+
 }
 
 .navbar-options a:hover {
@@ -40,18 +42,20 @@ html, body {
 
 .loginAndSignUp {
   display: flex;
-  gap: 10px; /* Adjust gap between buttons */
-  margin-top: 8px; /* Adjust margin-top as needed */
+  gap: 20px; /* Adjust gap between buttons */
+  margin-top: 0%; /* Adjust margin-top as needed */
+  
 }
 
 .login, .signup {
-  padding: 10px 20px; /* Adjust padding as needed */
+  padding: 10px 30px; /* Adjust padding as needed */
   font-size: 14px; /* Adjust font size as needed */
   font-family: "Inter";
   border-radius: 5px;
   border: none;
   font-weight: bold;
   transition: all 0.3s ease;
+ 
 }
 
 .login:hover, .signup:hover {
@@ -61,7 +65,12 @@ html, body {
 .nav-toggle {
   display: none;
 }
-
+.navbar-options {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex: 1; /* Take up the remaining space */
+}
 /* Display nav-toggle on smaller screens */
 @media (max-width: 768px) {
   .nav-toggle {
@@ -69,7 +78,7 @@ html, body {
     font-size: 1.5rem;
     cursor: pointer;
     color: black;
-    margin-top: 20px;
+    margin-top: 0%;
     margin-right: 20px;
   }
 .logo{
@@ -81,12 +90,13 @@ html, body {
     position: fixed;
     top: 0;
     right: -100%; /* Initially off-screen */
-    height: 100vh; /* Full height of viewport */
-    width: 70%; /* Adjust width as needed */
+    height: 40vh; /* Full height of viewport */
+    width: 50%; /* Adjust width as needed */
     background-color: #E4EBF2;
     padding-top: 70px; /* Adjust padding-top as needed */
     transition: right 0.3s ease; /* Smooth animation for sliding in */
     z-index: 1000; /* Ensure it overlays other content */
+   
   }
 
   .navbar-options.open {
@@ -116,10 +126,16 @@ html, body {
     padding: 10px; /* Adjust padding for smaller screens */
   }
 
-  .navbar-options {
-    width: 80%; /* Adjust width as needed */
+  .logo{
+    font-size: 25px;
   }
-
+    .navbar-options {
+ 
+      justify-content: space-around;
+      align-items: center;
+      
+    }
+  
   .navbar-options.open {
     right: 0; /* Slide in from the right when open */
   }
@@ -130,8 +146,8 @@ html, body {
   }
 
   .nav-toggle {
-    margin-top: 20px;
-    margin-right: 10px;
+ margin-top: 10px;
+    margin-right: 0%;
   }
 }
 
@@ -145,7 +161,7 @@ html, body {
   }
 
   .navbar-options {
-    width: 85%; /* Adjust width as needed */
+    width: 70%; /* Adjust width as needed */
   }
 
   .navbar-options.open {
@@ -157,75 +173,91 @@ html, body {
   }
 
   .loginAndSignUp {
-    align-items: flex-start;
+    align-items: flex-end;
     flex-direction: row;
+   
   }
 
   .nav-toggle {
-    margin-top: 20px;
+    margin-top: 10px;
     margin-right: 5px;
   }
-}
-
-@media (max-width: 320px) {
-  .navbar {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    background-color: #E4EBF2;
-    max-height: 60px;
-    padding: 5px;
-    width: 100%;
+  .logo{
+    font-size: 30px;
+    margin-left: 0%;
+    font-weight: bold;
   }
-
-  .logo {
-    font-size: 20px; /* Reduce font size for smaller screens */
-    margin-top: 10px;
+  .login,.signup{
+    padding: 10px 25px; /* Adjust padding as needed */
+  font-size: 14px; 
   }
-
-  .navbar-options {
-    width: 90%;
-    flex-direction: column;
-    position: fixed;
-    top: 0;
-    right: -100%;
-    height: 100vh;
-    background-color: #E4EBF2;
-    padding-top: 60px;
-    transition: right 0.3s ease;
-    z-index: 1000;
   }
-
-  .navbar-options.open {
-    right: 0;
+  @media (max-width: 425px) {
+    .navbar-options a {
+      padding: 10px; /* Adjust padding for smaller screens */
+    }
+  
+    .logo{
+      font-size: 25px;
+    }
+      .navbar-options {
+   
+        justify-content: space-around;
+        align-items: center;
+        
+      }
+    
+    .navbar-options.open {
+      right: 0; /* Slide in from the right when open */
+    }
+  
+    .loginAndSignUp {
+      align-items: flex-start;
+      flex-direction: row;
+    }
+  
+    .nav-toggle {
+      margin-top: 20px;
+      margin-right: 10px;
+    }
   }
-
-  .navbar-options a {
-    padding: 6px; /* Reduce padding for smaller screens */
-    font-size: 14px; /* Reduce font size for smaller screens */
+  
+  @media (max-width: 375px) {
+    .navbar {
+      padding: 8px;
+    }
+  
+    .navbar-options a {
+      padding: 8px; /* Further adjust padding for smallest screens */
+    }
+  
+    .navbar-options {
+      width: 70%; /* Adjust width as needed */
+    }
+  
+    .navbar-options.open {
+      right: 0; /* Slide in from the right when open */
+    }
+  
+    .navbar-options a:hover {
+      padding: 10px; /* Adjust padding as needed */
+    }
+  
+    .loginAndSignUp {
+      align-items: flex-end;
+      flex-direction: row;
+     
+    }
+  
+    .nav-toggle {
+      margin-top: 20px;
+      margin-right: 5px;
+    }
+    .logo{
+      font-size: 21px;
+    }
+    .login,.signup{
+      padding: 10px 15px; /* Adjust padding as needed */
+    font-size: 12px; 
+    }
   }
-
-  .navbar-options a:hover {
-    padding: 8px;
-    color: #4CAF4F;
-  }
-
-  .loginAndSignUp {
-    flex-direction: row;
-    align-items: flex-start;
-  }
-
-  .login, .signup {
-    padding: 8px 10px; /* Reduce padding for smaller screens */
-    font-size: 12px; /* Reduce font size for smaller screens */
-  }
-
-  .nav-toggle {
-    display: block;
-    font-size: 1.2rem; /* Reduce font size for smaller screens */
-    cursor: pointer;
-    color: black;
-    margin-top: 20px;
-    margin-right: 10px;
-  }
-}

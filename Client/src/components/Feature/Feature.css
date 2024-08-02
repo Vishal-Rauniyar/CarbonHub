@@ -7,8 +7,8 @@
 }
 
 .eclipse1stFeature {
-  height: 500px;
-  width: 500px;
+  height: 400px;
+  width: 400px;
   background-color: rgba(152, 244, 222, 0.45);
   position: absolute;
   top: -5rem;
@@ -41,6 +41,7 @@
   padding-right: 80px;
   line-height: 1.5;
   font-size: 18px;
+  flex: -1;
 }
 .serviceMainDiv{
   height: 680px;
@@ -56,13 +57,13 @@
 }
 
 .eclipse2ndFeature {
-  height: 500px;
-  width: 500px;
+  height: 400px;
+  width: 400px;
   background-color: rgba(152, 244, 222, 0.45);
   position: absolute;
   top: 37rem;
-  right: -5rem;
-  z-index: -2;
+  right: 2rem;
+  z-index: -3;
   border-radius: 100%; 
   border: 1px solid #98F4DE;
 

@@ -6,19 +6,22 @@
 
 /* Main Login Div */
 .loginMainDiv {
-  width: 80%;
+ height: auto;
+  width: 60%;
   margin: 70px auto 270px auto;
   position: relative;
+ 
 }
 
 /* Login Image */
 #loginImage {
-  position: absolute;
+  position:absolute;
   height: 70vw;
   width: 80vw;
   max-width: 1200px;
-  max-height: 800px;
+  max-height: 760px;
   border-radius: 15px; /* Rounded corners */
+  display: block;
 }
 
 /* Form Container */
@@ -37,7 +40,8 @@
   width: 60%;
   max-width: 600px;
   margin: 80px auto;
-  padding: 40px;
+ 
+  padding: 30px;
 }
 
 /* Headings */
@@ -182,7 +186,7 @@ h2 {
 
   .loginForm {
     width: 90%;
-    padding: 20px;
+    padding: 10px;
   }
 
   h2 {
@@ -287,7 +291,7 @@ h2 {
 
   .loginForm {
     width: 95%;
-    padding: 10px;
+    padding: 0%;
   }
 
   h2 {

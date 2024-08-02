@@ -9,23 +9,23 @@
 
 /* Eclipse Styles */
 .eclipse1st, .eclipse23 {
-  height: 50vw;
-  width: 50vw;
+  height: 32vw;
+  width: 40vw;
   background-color: rgba(152, 244, 222, 0.45);
   position: absolute;
   z-index: -2;
-  border-radius: 100%;
+  border-radius: 60%;
 }
 
 .eclipse1st {
-  top: -10vw;
+  top: -5vw;
   left: -10vw;
   border: 1px solid #98f4de;
 }
 
 .eclipse23 {
-  top: 100%;
-  right: -10vw;
+  top: 80%;
+  right: 0vw;
 }
 
 /* Heading and Paragraph Styles */
@@ -63,12 +63,12 @@
 /* Responsive Styles */
 @media screen and (max-width: 768px) {
   .eclipse1st, .eclipse23 {
-    height: 70vw;
-    width: 70vw;
+    height: 40vw;
+    width: 40vw;
   }
 
   .eclipse23 {
-    top: 150%;
+    top: 140%;
   }
 
   .Service2 {
@@ -92,12 +92,12 @@
 
 @media screen and (max-width: 480px) {
   .eclipse1st, .eclipse23 {
-    height: 90vw;
-    width: 90vw;
+    height: 60vw;
+    width: 60vw;
   }
 
   .eclipse23 {
-    top: 200%;
+    top: 120%;
   }
 
   .Service2 {
