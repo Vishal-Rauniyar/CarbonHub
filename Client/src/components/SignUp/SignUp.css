@@ -1,15 +1,22 @@
+* {
+  font-family: "Mulish", sans-serif, "Manrope", sans-serif;
+  box-sizing: border-box;
+}
+
 .signUpMainDiv {
-  width: 80%;
+  width: 70%;
   margin: 70px auto 270px auto;
+  position: relative;
 }
 
 .signUpImage {
   position: absolute;
-  height: 50vw;
-  width: 80vw;
-  max-width: 1200px;
-  max-height: 800px;
-  border-radius: 15px;
+  height: 80vw;
+  width: 100vw;
+  max-width: 1300px;
+  max-height: 820px;
+  border-radius: 15px; /* Rounded corners */
+  display: block;
 }
 
 .formMain {
@@ -25,8 +32,8 @@
   border-radius: 20px;
   width: 60%;
   max-width: 600px;
-  margin: 80px auto;
-  padding: 40px;
+  margin: 20px auto;
+  padding: 30px;
 }
 
 .formHeading {
@@ -57,7 +64,7 @@
   height: 40px;
   border: 1px solid white;
   border-radius: 20px;
-  margin: 5px 5% 5px 5%;
+  margin: 5px 5%;
 }
 
 .formInput::placeholder {
@@ -66,22 +73,23 @@
 }
 
 .signUpAs {
-  margin-left: 90px;
+  margin-left: 80px;
 }
 
 .customRadio {
-  width: 15px;
-  height: 15px;
+  width: 14px;
+  height: 14px;
   border: 2px solid white;
   border-radius: 3px;
-  margin-right: 1px;
+  margin-right: 2px;
   cursor: pointer;
   position: absolute;
-  top: 3px;
+  top: 2px;
   left: 0;
 }
 
-.squareButton input[type="radio"], .squareButton input[type="checkbox"] {
+.squareButton input[type="radio"],
+.squareButton input[type="checkbox"] {
   display: none;
 }
 
@@ -109,12 +117,13 @@
 }
 
 .labelText {
-  width: 100px;
+  width: 120px;
   background-color: white;
   border: 1px solid white;
   text-align: center;
   border-radius: 10px;
   transition: all 0.5s ease-in;
+  gap: 10px;
 }
 
 .labelText:hover {
@@ -167,17 +176,14 @@
   margin-top: 10px;
 }
 
-
-
+/* Media Queries */
 @media (max-width: 768px) {
   .signUpMainDiv {
-    width: 90%;
-    margin-top: 40px;
-    margin-bottom: 150px;
+    width: 80%;
   }
 
   .signUpImage {
-    height: 70vw;
+    height: 95vw;
     width: 90vw;
   }
 
@@ -186,8 +192,8 @@
   }
 
   .signupForm {
-    width: 90%;
-    padding: 20px;
+    width: 60%;
+    padding: 2%;
   }
 
   .formHeading {
@@ -230,25 +236,27 @@
   }
 }
 
-@media (max-width: 480px) {
+@media (max-width: 425px) {
   .signUpMainDiv {
-    width: 95%;
-    margin-top: 30px;
-    margin-bottom: 100px;
+    width: 90%;
+    margin-top: 60px;
+    margin-bottom: 150px;
   }
 
   .signUpImage {
-    height: 80vw;
-    width: 95vw;
+    height: 155vw;
+    width: 90vw;
+    border-radius: 15px; /* Rounded corners */
   }
 
   .formMain {
-    margin-left: 1vw;
+    width: 90%;
+    padding: 10px;
   }
 
   .signupForm {
-    width: 95%;
-    padding: 15px;
+    width: 75%;
+    padding: 10px;
   }
 
   .formHeading {
@@ -259,14 +267,9 @@
     margin: 0.6rem auto;
   }
 
-  .formlabel {
-    font-size: 0.7rem;
-    margin: 2%;
-  }
-
   .formInput {
     height: 25px;
-    font-size: 0.7rem;
+    font-size: 0.6rem;
   }
 
   .signUpAs {
@@ -291,25 +294,39 @@
   }
 }
 
-@media (max-width: 320px) {
-  .signUpMainDiv {
-    width: 100%;
-    margin-top: 20px;
-    margin-bottom: 80px;
+@media (max-width: 375px) {
+  .signupForm {
+    width: 90%;
+    height: auto;
+    padding: 0;
   }
 
   .signUpImage {
-    height: 90vw;
-    width: 100vw;
+    height: 165vw;
+    width: 95vw;
+  }
+}
+
+@media (max-width: 320px) {
+  .signUpMainDiv {
+    width: 90%;
+    margin-top: 50px;
+    margin-bottom: 150px;
+  }
+
+  .signUpImage {
+    height: 170vw;
+    width: 95vw;
   }
 
   .formMain {
-    margin-left: 0.5vw;
+    margin-left: 2vw;
   }
 
   .signupForm {
-    width: 100%;
-    padding: 10px;
+    width: 90%;
+    padding: 5px;
+    height: 90%;
   }
 
   .formHeading {
@@ -318,11 +335,6 @@
 
   .formPara {
     margin: 0.5rem auto;
-  }
-
-  .formlabel {
-    font-size: 0.6rem;
-    margin: 1%;
   }
 
   .formInput {
@@ -341,7 +353,7 @@
   .submitForm {
     font-size: 0.8rem;
     height: 30px;
-  } 
+  }
 
   .hrLine {
     margin-left: 10px;
@@ -350,17 +362,16 @@
   .iconsDiv {
     margin-left: 20px;
   }
+
   .customRadio {
     width: 15px;
     height: 15px;
     border: 2px solid white;
     border-radius: 3px;
-    margin-right: 0%;
-    margin-left: 0%;
-    padding-left: 0%;
+    margin-right: 0;
+    margin-left: 10%;
     cursor: pointer;
- position:absolute;
-    top: 3px;
-  
+    position: absolute;
+    top: 1px;
   }
 }

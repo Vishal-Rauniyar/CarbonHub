@@ -3,22 +3,31 @@
   background-color: #F5F7FA;
   display: flex;
   justify-content: space-between;
-  margin: auto;
-  margin-left: 100px;
-  margin-right: 100px;
+  align-items: center;
+  padding: 50px 100px;
+ 
+  box-sizing: border-box;
 }
 
 .heroSection{
   background-color: #F5F7FA;
   display: flex;
   justify-content:space-around;
+  width: 100%;
 
+}
+.heroImage{
+  width:30%;
+  align-self: center;
 }
 
 .heroLeft{
-  max-width:60vw;
-  
+  max-width:50%;
+  display: flex;
+  flex-direction: column;
   justify-content: center;
+  align-items: flex-start;
+  
 }
 
 
@@ -26,43 +35,36 @@
   color: rgb(50, 50, 50);
   font-weight: 600;
   font-family: "Manrope", sans-serif;
-  font-size: 45px;
-  width:100vw;
+  font-size: 3rem;
+  margin-bottom: 20px;
 
 }
 
 .paraHero{
   font-weight: 500;
-  margin-top: 10px;
   color: #717171;
-  margin-left: 3em;
-  font-size: 20px;
-
+  font-size: 1.25rem;
+  margin-bottom: 20px;
+margin-left: 12%;
+ align-self:flex-start;
 }
 
 .buttonHero{
-  margin-top: 20px;
-  margin-left: 60px;
-  align-items: flex-start;
+  display: inline-block;
   background-color: #4CAF4F;
   color: white;
-  width: 100px;
-  height: 45px;
+  font-size: 1.25rem;
+  padding: 10px 20px;
   border: none;
-  background-position: 0 90%;
-  box-shadow: rgba(0, 0, 0, .2) 15px 28px 25px -18px;
-  padding: 6px 25px 10px 10px;
-  font-size: 20px;
   border-radius: 6px;
-  transform: scale(1);
-  transition: all 0.75s ease-in;
+  transition: all 0.3s ease;
+  margin-left: 15%;
 }
 
 .buttonHero:hover{
   cursor: pointer;
-  transform: translate(0, 2px, 0);
-  color: #4CAF4F;
   background-color: white;
+  color: #4CAF4F;
   box-shadow: rgba(179, 244, 172, 0.5) 0 1px 30px;
 }
 
@@ -377,51 +379,9 @@
   left: 7px;
   color: black;
 }
-@media(max-width:900px){
-  .navbar{
-    flex-wrap:wrap;
-  }
-.heroLeft{
-  flex-wrap: wrap;
-}
-      .achievementContent{
-        width: 80%;
-        display: flex;
-        justify-content: space-evenly;
-        margin: auto;
-      
-      }
-      .marketingGrid{
-    
-        flex-wrap: wrap;
-        padding:25px;
-      
-      }
-     .heroImage{ 
-      width:100%;
-     }
 
-   
-    .leftSide{
-      display: block;
-      flex-direction: column;
-      gap: 5px;
-      margin: 7px;
-    font-size: 14px;
-      justify-content:space-around;
-    }
-    html{
-      font-size:1.2rem;
-    }
-    .achievementCount{
-    flex-wrap: wrap;
-    }
-
-  }
- 
 
 @media(max-width:768px){
-
 
   .achievementContent{
     width: 100%;
@@ -434,7 +394,7 @@
   flex-wrap:nowrap;
   }
   .heroHeading{
-    font-size: 30px;
+    font-size: 2rem;
  
   }
   .navbar{
@@ -443,14 +403,16 @@
   }
   .heroContent{
     flex-direction: column-reverse;
+   padding: 20px;
   }
   .heroImage{
-    width:60%;
+    width:40%;
     align-self: center;
   }
  .heroLeft{
-  justify-content:start;
-  width:100%;
+  max-width: 100%;
+    align-items: center;
+    text-align: center;
 
   }
   .navbar {
@@ -504,32 +466,31 @@
 .headingFooter{
   font-size: 35px;
 }
+.paraHero {
+  font-size: 1.5rem;
+  margin: 10px 0;
+}
+.buttonHero {
+  font-size: 1.5rem;
+  padding: 8px 16px;
+}
+.marketingSection {
+  width: 100%;
+}
  }
 
 @media  screen and (max-width: 425px)
 {
-
-.heroHeading{
-  font-size: 18px;
-width: 100%;
-  justify-content:start;
- margin:0%;
-  padding-right: 0%;
-  word-break: normal;
-  margin-left: 4px;
-}
-.paraHero{
-  justify-content: strat;
-  margin: 0%;
-  padding: 0%;
-  margin-top: 5px;
-}
-.buttonHero{
-  justify-content: center;
-  margin:0%;
-  padding:0%;
-  margin-top: 5px;
-}
+  .heroHeading {
+    font-size: 1.5rem;
+  }
+  .paraHero {
+    font-size: 1rem;
+  }
+  .buttonHero {
+    font-size: 1rem;
+    padding: 6px 12px;
+  }
 
 .cards{
   margin: 0px;
@@ -629,11 +590,20 @@ padding: 6px;
   line-height:1rem;
   padding: 6px;
   }
+  .marketingSection{
+    width: 100%;
+  }
 
 }
 @media  screen and (max-width: 375){
-  
- 
+
+  .heroHeading {
+    font-size: 1.25rem;
+  }
+  .paraHero {
+    font-size: 0.75rem
+  }
+
 .achievementContent{
   width: 100%;
   display: flex;
@@ -659,5 +629,13 @@ padding: 6px;
 }
 }
 
+@media (max-width: 320px) {
+  .heroHeading {
+    font-size: 1.35rem;
+  }
 
-  
+  .paraHero {
+    font-size: 1rem
+  }
+
+}

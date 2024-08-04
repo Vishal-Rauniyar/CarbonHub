@@ -159,7 +159,7 @@ h2 {
   }
   
   #loginImage {
-    height: 100vw;
+    height: 95vw;
     width: 80vw;
     max-width: 1200px;
     max-height: 800px;
@@ -175,7 +175,7 @@ h2 {
   }
 
   #loginImage {
-    height: 150vw;
+    height: 145vw;
     width: 90vw;
     border-radius: 15px; /* Rounded corners */
   }
@@ -280,7 +280,7 @@ h2 {
   }
 
   #loginImage {
-    height: 170vw;
+    height: 160vw;
     width: 95vw;
     border-radius: 15px; /* Rounded corners */
   }
