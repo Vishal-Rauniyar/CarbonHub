@@ -3,6 +3,7 @@
 CarbonHub is a full-stack web application built using the MERN stack that helps individuals and organizations calculate their carbon footprint and take action to offset it.
 Users can connect with verified NGOs to plant trees on their behalf, promoting sustainability and environmental responsibility.
 
+
 🚀 Features
 
 🌱 Carbon Footprint Calculator: Estimate emissions from daily activities.
@@ -17,6 +18,8 @@ Users can connect with verified NGOs to plant trees on their behalf, promoting s
 
 🔒 Admin Controls: Manage NGOs, verify data, and oversee user submissions.
 
+
+
 🛠️ Tech Stack
 Category	Technologies
 Frontend	React.js, HTML5, CSS3, JavaScript
@@ -25,6 +28,9 @@ Database	MongoDB (Mongoose ORM)
 Authentication	JWT (JSON Web Token), bcrypt
 API Handling	Axios, RESTful APIs
 Version Control	Git, GitHub
+
+
+
 ⚙️ Installation & Setup
 
 Follow these steps to run CarbonHub locally:
